@@ -1,0 +1,287 @@
+nav{
+    position: fixed;
+    width: 100%;
+    margin: 0;
+   
+    z-index: 4;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+   
+}
+ul li{
+    align-items: center;
+    padding: 20px;
+    
+}
+ul li a{
+    border: 1px solid skyblue;
+    padding: 4px;
+    box-shadow: 0 0 9px whitesmoke;
+    border-radius: 10%;
+    color: wheat;
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+    text-shadow: 0 0 10px #3333A5,
+                 0 0 20px greenyellow,
+                 0 0 30px #3333A5,
+                 0 0 40px greenyellow,
+                 0 0 50px #3333A5,
+                 0 0 60px greenyellow,
+                 0 0 70px #3333A5,
+                 0 0 80px greenyellow,
+                 0 0 90px #3333A5;
+                
+     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
+     font-weight: 600;  
+    
+    
+           
+    }
+ul li a:hover{
+    text-shadow: 0 0 10px greenyellow,
+                 0 0 20px greenyellow,
+                 0 0 30px greenyellow,
+                 0 0 40px greenyellow,
+                 0 0 50px greenyellow,
+                 0 0 60px greenyellow,
+                 0 0 70px greenyellow,
+                 0 0 80px greenyellow,
+                 0 0 90px greenyellow;
+
+    color: goldenrod;
+   
+}
+ nav ul ul {
+     position: absolute;
+     width: 70px;
+     display: none;
+     text-align: center;
+     
+ }
+ nav ul ul li{
+     display: inline;
+     padding: 10px;
+}
+
+ nav ul ul li a{
+     font-size: 10px;
+     padding: 1px;
+}
+
+ nav ul ul li a:hover{
+    text-decoration: underline;
+ }
+ 
+ nav ul li:hover ul{
+     display: block;
+}
+
+html, body{
+    width: 100%;
+    height:100%;
+    background: black;
+    background: radial-gradient(#555, #000);
+    
+}
+ #nasa1{
+     width: 80px;
+     opacity: 0.9;
+     position: absolute;
+     top:3%;
+     filter: saturate(10%) drop-shadow(7px 7px 7px wheat) hue-rotate(90deg);
+    
+ }
+
+ #nasa1:hover{
+     filter: drop-shadow(7px 7px 7px wheat) saturate(1);
+ }
+
+#stars{
+    height: 100%;
+    width: 100%;
+    background: url('stars.png');
+    position: relative;
+    z-index: 2;
+    animation: thestars 2s infinite alternate;
+    
+}
+
+#sun{
+    position: absolute;
+    z-index: 4;
+    top:55%;
+    left: 50%;
+    margin-top: -80px;
+    margin-left: -80px;
+  
+    
+}
+
+#SUN{
+    width: 100px;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    margin-top: 30px;
+    margin-left: 30px;
+    
+    animation: sunfire 18s infinite linear;
+    border-radius: 100%;
+    filter: drop-shadow(0 0 20px wheat);
+
+}
+
+#earthOrbit{
+    border-width:1px;
+    border-color: whitesmoke;
+    border-style: dotted; 
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    z-index: 4;
+    top: 55%;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -200px;
+    border-radius: 60%;
+    animation: spin 30s linear infinite;
+    
+}
+
+img{
+    width: 50px;
+}
+
+#earth{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -15px;
+    animation: spin 1s linear infinite;
+    width: 30px;
+    filter: drop-shadow( 0 0 6px #1BB0DD);
+    
+    
+}
+
+#moonOrbit{
+    
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: -12px;
+    margin-top: -30px;
+   
+    border-radius: 100px;
+    animation: spin 7s linear infinite reverse;
+}
+
+#moon{
+    width: 10px;
+    height: 10px;
+    background: grey;
+    background: radial-gradient(#ddd,#888);
+    border-radius: 100%;
+    animation: spin 3s linear infinite; 
+    position: absolute;
+    margin-left: 10px;
+}
+#mercuryOrbit{
+    border: 1px dotted whitesmoke;
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    z-index: 4;
+    top: 55%;
+    left: 50%;
+    margin-top: -110px;
+    margin-left: -110px;
+    border-radius: 60%;
+    animation: spin 3s linear infinite;
+    filter: drop-shadow(1px 1px 1px brown);
+}
+
+#mercury{
+    width: 20px;
+    animation: spin 13s linear infinite;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    margin-top: -20px;
+}
+#veniceOrbite{
+    border: 1px dotted whitesmoke;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    z-index: 4;
+    top: 55%;
+    left: 50%;
+    margin-top: -150px;
+    margin-left: -150px;
+    border-radius: 60%;
+    animation: spin 15s linear infinite reverse;
+    filter: drop-shadow(1px 1px 1px #9C8D6B);
+}
+
+#venice{
+    width: 25px;
+    animation: spin 13s linear infinite;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    margin-top: -25px;
+}
+#marsOrbite{
+    border: 1px dotted whitesmoke;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    z-index: 4;
+    top: 55%;
+    left: 50%;
+    margin-top: -250px;
+    margin-left: -250px;
+    border-radius: 60%;
+    animation: spin 5s linear infinite;
+    filter: drop-shadow(1px 1px 1px #C47642);
+}
+
+#mars{
+    width: 15px;
+    animation: spin 3s linear infinite;
+    position: absolute;
+    top: 55%;
+    left: 0;
+    margin-top: -15px;
+    filter: drop-shadow(0 0 1px #EB8C55);
+}
+
+@keyframes thestars{
+    from    {opacity: 1;}
+    to      {opacity: 0.2;}
+}
+
+@keyframes sunfire{
+    from {transform: rotate(0);}
+    from {box-shadow: 0 0 300px #f5c91a;}
+  
+    to {transform: rotate(360deg);}
+    to  {box-shadow: 0 0 700px #f5c91a;}     
+    
+}
+
+@keyframes spin{
+    from {transform: rotate(0);}
+    to   {transform: rotate(360deg);}
+}
+
